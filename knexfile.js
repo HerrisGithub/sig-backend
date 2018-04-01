@@ -3,7 +3,7 @@
 module.exports = {
 
   development: {
-    client: 'postgresql',
+    client: 'mysql',
     connection: {
       host : 'localhost',
       user : 'root',
@@ -13,7 +13,7 @@ module.exports = {
   },
 
   staging: {
-    client: 'postgresql',
+    client: 'mysql',
     connection: {
       host : 'localhost',
       user : 'root',
