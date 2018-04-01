@@ -17,9 +17,9 @@ console.log(process.env)
 const knex = require('knex')({
   client: 'mysql',
   connection: {
-    host : '139.59.116.221',
+    host : '139.59.116.46',
     user : 'root',
-    password : 'root',
+    password : '',
     database : 'sig'
   }
 })
