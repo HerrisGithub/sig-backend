@@ -14,7 +14,7 @@ const bodyParser = require('body-parser')
 app.use(cors())
 
 const knex = require('knex')({
-  client: 'postgresql',
+  client: 'mysql',
   connection: process.env.DATABASE_URL
 })
 app.use(bodyParser.urlencoded({ extended: false }))

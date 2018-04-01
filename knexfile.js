@@ -20,8 +20,12 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
-    connection: process.env.DATABASE_URL,
+    client: 'mysql',
+    connection: {
+      host:'localhost',
+      user:'root',
+      pasword:''
+    },
     pool: {
       min: 2,
       max: 10
