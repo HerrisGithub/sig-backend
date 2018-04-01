@@ -26,6 +26,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app
   .use(express.static(path.join(__dirname, 'public')))
+  .get('/',function(req,res){
+    console.log(process.env)
+  })
   .get('/places/:query/:key', (req, res) => {
       Axios.get('https://maps.googleapis.com/maps/api/place/textsearch/json?query='+req.params.query+'&key='+req.params.key)
       .then(function(data){
