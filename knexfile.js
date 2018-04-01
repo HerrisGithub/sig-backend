@@ -7,7 +7,7 @@ module.exports = {
     connection: {
       host : '139.59.116.221',
       user : 'root',
-      password : '',
+      password : 'root',
       database : 'sig'
     },
   },
@@ -17,7 +17,7 @@ module.exports = {
     connection: {
       host : '139.59.116.221',
       user : 'root',
-      password : '',
+      password : 'root',
       database : 'sig'
     },
     pool: {
@@ -34,7 +34,7 @@ module.exports = {
     connection: {
       host : '139.59.116.221',
       user : 'root',
-      password : '',
+      password : 'root',
       database : 'sig'
     },
     pool: {
