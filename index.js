@@ -15,7 +15,12 @@ app.use(cors())
 
 const knex = require('knex')({
   client: 'mysql',
-  connection: process.env.DATABASE_URL
+  connection: {
+    host : '127.0.0.1',
+    user : 'root',
+    password : '',
+    database : 'sig'
+  }
 })
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())

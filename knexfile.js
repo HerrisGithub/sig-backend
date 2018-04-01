@@ -22,9 +22,10 @@ module.exports = {
   production: {
     client: 'mysql',
     connection: {
-      host:'localhost',
-      user:'root',
-      pasword:''
+      host : '127.0.0.1',
+      user : 'root',
+      password : '',
+      database : 'sig'
     },
     pool: {
       min: 2,
