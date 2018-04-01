@@ -5,7 +5,7 @@ module.exports = {
   development: {
     client: 'mysql',
     connection: {
-      host : '139.59.116.46',
+      host : 'localhost',
       user : 'root',
       password : '',
       database : 'sig'
@@ -15,7 +15,7 @@ module.exports = {
   staging: {
     client: 'mysql',
     connection: {
-      host : '139.59.116.46',
+      host : 'localhost',
       user : 'root',
       password : '',
       database : 'sig'
@@ -32,7 +32,7 @@ module.exports = {
   production: {
     client: 'mysql',
     connection: {
-      host : '139.59.116.46',
+      host : 'localhost',
       user : 'root',
       password : '',
       database : 'sig'
