@@ -16,7 +16,7 @@ app.use(cors())
 const knex = require('knex')({
   client: 'mysql',
   connection: {
-    host : 'localhost',
+    host : '139.59.116.221',
     user : 'root',
     password : 'root',
     database : 'sig'
