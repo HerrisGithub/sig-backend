@@ -12,6 +12,7 @@ const cors = require('cors')
 const pg = require('pg')
 const bodyParser = require('body-parser')
 app.use(cors())
+console.log(process.env)
 
 const knex = require('knex')({
   client: 'mysql',
