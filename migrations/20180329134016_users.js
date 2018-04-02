@@ -6,14 +6,12 @@ exports.up = function(knex, Promise) {
 		table.string('email').unique();
         table.string('fullname');
         table.string('password');
-		table.timestamp('created_at').defaultTo(knex.fn.now(	));
-		table.timestamp('updated_at').defaultTo(knex.fn.now());
+		table.timestamp('created_at').defaultTo(knex.fn.now());
    })
   	.then(function(){
   		console.log('Table Users Berhasil ditambahkan!');
     });
 };
-
 exports.down = function(knex, Promise) {
     return knex.schema
     .dropTable('users', table=>{
